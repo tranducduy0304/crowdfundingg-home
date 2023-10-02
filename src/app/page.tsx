@@ -1,95 +1,221 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
+import Header from "public/header.jpeg";
+import Avatar from "public/logo.jpeg";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    return (
+        <div className={styles.container}>
+            {/* Header  */}
+            <div className={styles.header}>
+                <div className={styles.item}>
+                    <h1 className={styles.title}>
+                        Kết nối yêu thương, xây dựng cộng đồng
+                    </h1>
+                    <p className={styles.desc}>
+                        Tạo sự gắn kết và xây dựng cộng đồng vững mạnh thông qua
+                        tình yêu thương.
+                    </p>
+                    <div className={styles.button}>
+                        <button className={styles.button1}>
+                            Đăng ký thành viên
+                        </button>
+                        <button className={styles.button2}>
+                            {" "}
+                            Tìm hiểu thêm
+                        </button>
+                    </div>
+                </div>
+                <div className={styles.item}>
+                    <Image src={Header} alt="" className={styles.img} />
+                </div>
+            </div>
+
+            {/* Campaign */}
+            <div className={styles.campaign}>
+                <h2>Các chiến dịch đang diễn ra</h2>
+                <div className={styles["campaign-list"]}>
+                    <div className={styles["campaign-item"]}>
+                        <Image
+                            className={styles["campaign-item-image"]}
+                            src={Header}
+                            alt="a image about a campaign"
+                        />
+                        <div className={styles["campaign-detail"]}>
+                            <p className={styles["campaign-desc"]}>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque purus mauris, mattis ac
+                                finibus ut, ultricies sit amet eros. Donec
+                                tempor tortor sed libero tempor, id dapibus nisi
+                                sodales
+                            </p>
+                            <div className={styles.row}>
+                                <Image
+                                    className={styles.avatar}
+                                    src={Avatar}
+                                    alt="avatar of origation"
+                                />
+                                <h4 className={styles.name}>
+                                    Trung tâm tình nguyện quốc gia
+                                </h4>
+                                <button className={styles.time}>
+                                    Còn 10 ngày
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={styles["campaign-item"]}>
+                        <Image
+                            className={styles["campaign-item-image"]}
+                            src={Header}
+                            alt="a image about a campaign"
+                        />
+                        <div className={styles["campaign-detail"]}>
+                            <p className={styles["campaign-desc"]}>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque purus mauris, mattis ac
+                                finibus ut, ultricies sit amet eros. Donec
+                                tempor tortor sed libero tempor, id dapibus nisi
+                                sodales
+                            </p>
+                            <div className={styles.row}>
+                                <Image
+                                    className={styles.avatar}
+                                    src={Avatar}
+                                    alt="avatar of origation"
+                                />
+                                <h4 className={styles.name}>
+                                    Trung tâm tình nguyện quốc gia
+                                </h4>
+                                <button className={styles.time}>
+                                    Còn 10 ngày
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={styles["campaign-item"]}>
+                        <Image
+                            className={styles["campaign-item-image"]}
+                            src={Header}
+                            alt="a image about a campaign"
+                        />
+                        <div className={styles["campaign-detail"]}>
+                            <p className={styles["campaign-desc"]}>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque purus mauris, mattis ac
+                                finibus ut, ultricies sit amet eros. Donec
+                                tempor tortor sed libero tempor, id dapibus nisi
+                                sodales
+                            </p>
+                            <div className={styles.row}>
+                                <Image
+                                    className={styles.avatar}
+                                    src={Avatar}
+                                    alt="avatar of origation"
+                                />
+                                <h4 className={styles.name}>
+                                    Trung tâm tình nguyện quốc gia
+                                </h4>
+                                <button className={styles.time}>
+                                    Còn 10 ngày
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={styles["campaign-item"]}>
+                        <Image
+                            className={styles["campaign-item-image"]}
+                            src={Header}
+                            alt="a image about a campaign"
+                        />
+                        <div className={styles["campaign-detail"]}>
+                            <p className={styles["campaign-desc"]}>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque purus mauris, mattis ac
+                                finibus ut, ultricies sit amet eros. Donec
+                                tempor tortor sed libero tempor, id dapibus nisi
+                                sodales
+                            </p>
+                            <div className={styles.row}>
+                                <Image
+                                    className={styles.avatar}
+                                    src={Avatar}
+                                    alt="avatar of origation"
+                                />
+                                <h4 className={styles.name}>
+                                    Trung tâm tình nguyện quốc gia
+                                </h4>
+                                <button className={styles.time}>
+                                    Còn 10 ngày
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={styles["campaign-item"]}>
+                        <Image
+                            className={styles["campaign-item-image"]}
+                            src={Header}
+                            alt="a image about a campaign"
+                        />
+                        <div className={styles["campaign-detail"]}>
+                            <p className={styles["campaign-desc"]}>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque purus mauris, mattis ac
+                                finibus ut, ultricies sit amet eros. Donec
+                                tempor tortor sed libero tempor, id dapibus nisi
+                                sodales
+                            </p>
+                            <div className={styles.row}>
+                                <Image
+                                    className={styles.avatar}
+                                    src={Avatar}
+                                    alt="avatar of origation"
+                                />
+                                <h4 className={styles.name}>
+                                    Trung tâm tình nguyện quốc gia
+                                </h4>
+                                <button className={styles.time}>
+                                    Còn 10 ngày
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={styles["campaign-item"]}>
+                        <Image
+                            className={styles["campaign-item-image"]}
+                            src={Header}
+                            alt="a image about a campaign"
+                        />
+                        <div className={styles["campaign-detail"]}>
+                            <p className={styles["campaign-desc"]}>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque purus mauris, mattis ac
+                                finibus ut, ultricies sit amet eros. Donec
+                                tempor tortor sed libero tempor, id dapibus nisi
+                                sodales
+                            </p>
+                            <div className={styles.row}>
+                                <Image
+                                    className={styles.avatar}
+                                    src={Avatar}
+                                    alt="avatar of origation"
+                                />
+                                <h4 className={styles.name}>
+                                    Trung tâm tình nguyện quốc gia
+                                </h4>
+                                <button className={styles.time}>
+                                    Còn 10 ngày
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    );
 }

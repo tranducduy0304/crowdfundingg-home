@@ -1,0 +1,36 @@
+.footer {
+    /* background-color: #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1f242b;
+    color: white;
+    padding: 0 50px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    /* background-color: #000; */
+}
+
+.col {
+    padding: 70px 0;
+}
+
+.title {
+    font-size: 20;
+    font-weight: 500;
+}
+
+.desc {
+    padding-top: 20px;
+    list-style-type: none;
+    font-size: 18px;
+    color: #e1e1e1;
+}

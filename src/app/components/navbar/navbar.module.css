@@ -1,0 +1,101 @@
+.main {
+    /* overflow: hidden; */
+    position: fixed;
+    /* top: 0; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 0 220px;
+    border-bottom: 1px solid #eeeeee;
+    /* position: fixed; */
+    top: 0;
+    /* left: 0; */
+    /* margin: auto; */
+    width: 100%;
+    background-color: white;
+}
+
+.container-nav {
+    /* overflow: hidden; */
+    /* position: fixed;
+    top: 0; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 220px;
+    border-bottom: 1px solid #eeeeee; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    padding-left: 10px;
+    /* position: absolute; */
+}
+
+.navbar {
+    /* position: absolute; */
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.navigation {
+    text-decoration: none;
+    color: #000;
+    padding-right: 20px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.navigation:hover {
+    color: #1b51cf;
+}
+
+.navigation:active {
+    color: #1b51cf;
+}
+
+.btn-login {
+    background-color: white;
+    font-size: 15px;
+    width: 80px;
+    height: 35px;
+    border: 1.5px solid #92c5fe;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #1b51cf;
+    border: none;
+}
+.btn-login:active {
+    background-color: #1b51cf;
+    border: none;
+}
+
+.btn-signup {
+    background-color: white;
+    font-size: 15px;
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1b51cf;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-signup:hover {
+    background-color: #1b51cf;
+    /* color: white; */
+}
